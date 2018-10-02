@@ -6,7 +6,7 @@
 	<groupId>dk.miracle</groupId>
 	<artifactId>helloworld</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>helloworld</name>
 	<description>Demo project for Spring Boot</description>
@@ -57,7 +57,7 @@
 			<!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
 			<id>openshift</id>
 			<build>
-				<finalName>helloworld</finalName>
+				<finalName>helloworld-0.0.1-SNAPSHOT</finalName>
 				<plugins>
 					<plugin>
 						<artifactId>maven-war-plugin</artifactId>
