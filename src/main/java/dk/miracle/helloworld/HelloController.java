@@ -19,6 +19,11 @@ public class HelloController {
         return "You've reached the hello service";
     }
 
+    @RequestMapping("/healthcheck")
+    public String healthCheck() {
+        return "OK";
+    }
+
     @RequestMapping("/helloworld")
     public String helloWorld() {
         return String.format("Why hello there, %s!", configuration.getWorldUk());
