@@ -15,7 +15,7 @@ public class HelloController {
         this.configuration = configuration;
     }
 
-    @RequestMapping("/hello")
+    @RequestMapping("/")
     public String index() {
         return "Why hello there, " + configuration.getWorldUk();
     }
