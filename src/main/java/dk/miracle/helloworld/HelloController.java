@@ -14,9 +14,19 @@ public class HelloController {
         this.configuration = configuration;
     }
 
-    @RequestMapping("/helloworld")
+    @RequestMapping("/")
     public String index() {
-        return "Why hello there, " + configuration.getWorldUk();
+        return "You've reached the hello service";
+    }
+
+    @RequestMapping("/helloworld")
+    public String helloWorld() {
+        return String.format("Why hello there, %s!", configuration.getWorldUk());
+    }
+
+    @RequestMapping("/hello/{name}")
+    public String helloWhoever(@PathVariable String name) {
+        return String.format("Hello %s!", name);
     }
 
 }
