@@ -14,10 +14,10 @@ public class HelloController {
         this.configuration = configuration;
     }
 
-    @RequestMapping("/")
+    /*@RequestMapping("/")
     public String index() {
         return "You've reached the hello service";
-    }
+    }*/
 
     @RequestMapping("/healthcheck")
     public String healthCheck() {
