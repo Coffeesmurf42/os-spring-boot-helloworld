@@ -1,3 +1,8 @@
+spring:
+  application:
+    name: HelloWorldOpenshift
+    shortname: hello-world-os
+
 hello:
   world:
     dk: Verden
